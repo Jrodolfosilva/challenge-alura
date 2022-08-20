@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
     <title>.::codificador::..</title>
 </head>
 <body>
-<main style="display:flex ;
-justify-Content:center;
-">
-   <section>
-    <textarea name="codifica" id="code" cols="30" rows="15"
-     placeholder="Digite o texto que deseja codificar"
-     ></textarea>
-   </section> 
-   <section>
-    <textarea name="descodifica" id="descode" cols="30" rows="15"
-    placeholder="Digite o texto que deseja decodificar"
+<main>
+   <section class="codifica">
+    <textarea name="codifica" id="code" cols="40" rows="5" placeholder="Digite o texto que deseja codificar"></textarea></>
+
+    <button id="codificar">Codificar</button>
+    <textarea name="descodifica" id="descode" cols="40" rows="5" placeholder="Sua mensagem codificada" disabled
+    ></textarea>
+    </section> 
+
+    <section class="decodifica">
+   
+    <textarea name="codifica" id="code" cols="40" rows="5" placeholder="Digite o texto que deseja codificar"></textarea></>
+
+    <button id="codificar">Codificar</button>
+    <textarea name="descodifica" id="descode" cols="40" rows="5" placeholder="Sua mensagem codificada" disabled
     ></textarea>
    </section> 
 </main>
-    <script src="./js/app.js"/>
+    <script src="./js/app.js" defer/>
 </body>
 </html>
 
