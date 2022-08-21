@@ -5,21 +5,109 @@
     text-decoration: none;
 
 }
-.codifica, .decodifica{
-    background-color:rgba(15, 13, 13, 0.445);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:10px;
-    padding: 25px 0px;
+main{
+    min-height: 100vh;
+    background-color:#E5E5E5;
+    padding-top: 10vh;
 }
-button{
-    padding: 8px;
-    width: 130px;
-    border-radius: 4px;
+section > textarea{
+    display: block;
     border: none;
-    cursor: pointer;
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 90%;
+    padding: 5px 8px;
+    background-color: transparent;
 }
-textarea{
-    padding: 8px 12px;
+section > textarea::placeholder{
+    font-size: 25px;
+    color:#0A3871;
+}
+section > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+    margin-top:2vh;
+}
+section div >  p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap:4px;
+    width: 90%;
+}
+section div > button {
+    background-color:#0A3871;
+    color:#fff;
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    width: 90%;
+}
+
+main > section:nth-child(2){
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+main > section:nth-child(2) > div{
+    background-color: #fff;
+    min-height: 20vh;
+    border-radius: 30px;
+    padding: 20px 20px;
+}
+
+.response{
+    display: block;
+    text-align: center;
+}
+.response p {
+    margin-top: 4px;
+    color:#343A40;
+}
+
+
+@media (min-width:768px) {
+ 
+    section > textarea{
+        width: 90%;
+        height: 50vh;
+        font-size: 32px;
+    }
+    section > textarea::placeholder{
+        font-size: 40px;
+    }
+    main > section:nth-child(2) > div{
+      border-radius: 60px;
+    }
+    section div > button {
+        width: 320px;
+        height: 60px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+    section div > button:nth-child(2) {
+        margin-right: 32px;
+        
+    }
+    section div >  p {
+       font-size: 18px;
+    }
+    .response{
+        display: block;
+        text-align: center;
+    }
+    .response h3{
+        font-size:44px;
+        margin-top: 20px;
+
+    }
+    .response p {
+        margin: 0 auto;
+        margin-top: 4px;
+        font-size: 32px;
+    }
+       
 }
