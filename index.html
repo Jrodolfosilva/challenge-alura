@@ -10,21 +10,22 @@
 <body>
 <main>
    <section class="codifica">
-    <textarea name="codifica" id="code" cols="40" rows="5" placeholder="Digite o texto que deseja codificar"></textarea></>
-
-    <button id="codificar">Codificar</button>
-    <textarea name="descodifica" id="descode" cols="40" rows="5" placeholder="Sua mensagem codificada" disabled
-    ></textarea>
+        <textarea name="codifica" id="code" cols="30" rows="10" placeholder="Digite seu texto"></textarea></>
+        <div>
+            <p>
+                <img src="./img/Vector.png" alt="icon">
+                <span>Apenas letras minúscula e sem acento</span>
+            </p>
+            <button id="codificar">Criptografar</button>
+            <button id="descodificar">Descriptografar</button>
+        </div>
+    </section>
+    <section>
+        <div class="response">
+            <h3>Nenhuma mensagem encontrada</h3>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
     </section> 
-
-    <section class="decodifica">
-   
-    <textarea name="codifica" id="code" cols="40" rows="5" placeholder="Digite o texto que deseja codificar"></textarea></>
-
-    <button id="codificar">Codificar</button>
-    <textarea name="descodifica" id="descode" cols="40" rows="5" placeholder="Sua mensagem codificada" disabled
-    ></textarea>
-   </section> 
 </main>
     <script src="./js/app.js" defer/>
 </body>
