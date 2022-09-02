@@ -1,3 +1,8 @@
+/*
+Desenvolvido apenas a tela mobile
+
+*/
+
 *{
     margin: 0;
     padding: 0px;
@@ -62,6 +67,7 @@ main > section:nth-child(2) > div{
 .response{
     display: block;
     text-align: center;
+    word-wrap: break-word;
 }
 .response p {
     margin-top: 4px;
